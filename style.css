@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #054164;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 4rem;
+  background-color: #a1cee5;
+  box-shadow: 0 0 0.3rem #949697aa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+.nav-logo {
+  color: #054164;
+}
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #054164;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu a:hover {
+  color: #fdf7fd;
+  background-color: #72a8cd;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.converter {
+  width: 100%;
+  height: calc(100vh - 4rem);
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 23rem;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #949697aa;
+  background-color: #65b3e031;
+}
+.get-value {
+  display: flex;
+  flex-direction: column;
+}
+.currency-selection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+label {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+#number,
+#currency {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+#currency1 {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.Convert-btn {
+  font-size: 1.2rem;
+  width: fit-content;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: #a1cee5;
+  color: #054164;
+  cursor: pointer;
+}
+.output {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+table {
+  width: 35rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #949697aa;
+  padding: 1rem;
+  background-color: #65b3e031;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    height: 5rem;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 580px) {
+  table {
+    width: 30rem;
+  }
+}
+@media (max-width: 493px) {
+  table {
+    width: 25rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 412px) {
+  .navbar .nav-menu {
+    gap: 1.5rem;
+  }
+  h1 {
+    width: 22rem;
+    font-size: 1.5rem;
+  }
+  form {
+    width: 20rem;
+  }
+  table {
+    width: 20rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    width: 20rem;
+  }
+}
+@media (max-width: 372px) {
+  .navbar .nav-menu {
+    gap: 1rem;
+  }
+}
+@media (max-width: 353px) {
+  .navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .nav-menu {
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    width: 20rem;
+  }
+  form {
+    width: 18rem;
+  }
+  table {
+    width: 18rem;
+  }
+}
+@media (max-width: 310px) {
+  .navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar .nav-menu {
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    width: 18rem;
+    font-size: 1.3rem;
+  }
+  .nav-menu a {
+    font-size: 1rem;
+  }
+  form {
+    width: 15rem;
+    padding: 1rem;
+  }
+  #number,
+  #currency,
+  #currency1,
+  label {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+    width: 16rem;
+  }
+  table {
+    width: 15rem;
+    padding: 1rem 0;
+  }
+}
